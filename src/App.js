@@ -1,7 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import Piechart from './components/Piechart'
-import LineChart from './components/LineChart'
 
 function App() {
   return (
@@ -20,10 +18,7 @@ function App() {
           Learn React
         </a>
       </header>
-      {/* <Piechart></Piechart> */}
-      <LineChart></LineChart>
     </div>
-    
   );
 }
 
