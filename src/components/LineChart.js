@@ -16,36 +16,14 @@ function LineChart(props) {
         }
     )
 
-    const [data, setData] = useState({
-        grossRev: [
-            {
-                x: '2015',
-                y: 200000
-            },
-            {
-                x: '2016',
-                y: 300000
-            },
-            {
-                x: '2018',
-                y: 400000
-            }
-        ],
-        grossExp: [
-            {
-                x: '2015',
-                y: 100000
-            },
-            {
-                x: '2016',
-                y: 200000
-            },
-            {
-                x: '2018',
-                y: 300000
-            }
-        ],
-    })
+    if (!props.data){
+        return(
+            <div>Loading...</div>
+        )
+    }
+
+    const data = props.data
+
 
     // useEffect(() => {
     //     setData({
