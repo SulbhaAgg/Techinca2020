@@ -1,24 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import LineChart from './components/LineChart';
+import LandingPage from './components/LandingPage';
+import AllBusiness from './components/AllBusiness';
+import Header from './components/Header';
+import { BrowserRouter, Link, Router, Switch, Route } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <BrowserRouter>
+      <Header />
+      
+
+      <Switch>
+        <Route exact path='/'>
+          <LandingPage></LandingPage>
+        </Route>
+        <Route path="/Companies">
+          <AllBusiness></AllBusiness>
+        </Route>
+      </Switch>
+    </BrowserRouter>
+
   );
 }
 
