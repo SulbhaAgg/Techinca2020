@@ -35,15 +35,17 @@ export default function Business(props) {
                     <img class="bizImg" src={props.img}></img>
                 </Col>
                 <Col className="text-center">
-                    <h3>Funds raised: ${props.fundingGot}</h3>
-                    <h3>Funds needed: ${props.fundingGoal}</h3>
+                    <h4>Funds raised: </h4>
+                    <h2>${props.fundingGot}</h2>
+                    <h4>Funds needed:</h4>
+                    <h2> ${props.fundingGoal}</h2>
                 </Col>
                 <Col className="linkCont">
                     <Link to={`${url}/${props.name}`}>
-                        <Button>Company Page</Button>
+                        <Button className="link">Company Page</Button>
                     </Link>
                     <br/>
-                    <Button>Contribute</Button>
+                    <Button className="link">Contribute</Button>
                 </Col>
                 <Col md="3">
                     <PieChart fundingGot={props.fundingGot} fundingGoal={props.fundingGoal}></PieChart>
