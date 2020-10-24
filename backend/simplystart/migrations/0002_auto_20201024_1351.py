@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('crowdfunds', '0001_initial'),
+        ('simplystart', '0001_initial'),
     ]
 
     operations = [

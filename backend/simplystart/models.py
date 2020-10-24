@@ -21,21 +21,24 @@ class Organization(models.Model):
     email = models.EmailField(blank=True)
     URL = models.URLField(blank=True)
 
-class Tags(models.Model):
+    def __str__(self):
+        return "{} ({}), Located in {},{}".format(self.name, self.founded,self.city, self.state)
+
+class Tag(models.Model):
     tag = models.CharField(max_length=100)
 
-class OrganizationTags(models.Model):
+class OrganizationTag(models.Model):
     org = models.ForeignKey(Organization, on_delete=models.CASCADE)
-    tag = models.ForeignKey(Tags, on_delete=models.CASCADE)
+    tag = models.ForeignKey(Tag, on_delete=models.CASCADE)
 
-class OrganizationContributions(models.Model):
+class OrganizationContribution(models.Model):
     org = models.ForeignKey(Organization, on_delete=models.CASCADE)
     fund_desc = models.TextField(max_length=500)
     fund_required = models.DecimalField(max_digits=8, decimal_places=2, default=0)
     fund_raised = models.DecimalField(max_digits=8, decimal_places=2, default=0)
 
-class UserContributions(models.Model):
-    org_event = models.ForeignKey(OrganizationContributions, on_delete=models.CASCADE)
+class UserContribution(models.Model):
+    org_event = models.ForeignKey(OrganizationContribution, on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     amount_contributed = models.DecimalField(max_digits=8, decimal_places=2, default=0)
     comment = models.TextField(max_length=500)

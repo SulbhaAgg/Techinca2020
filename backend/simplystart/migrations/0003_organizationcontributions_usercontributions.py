@@ -9,27 +9,27 @@ class Migration(migrations.Migration):
 
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-        ('crowdfunds', '0002_auto_20201024_1351'),
+        ('simplystart', '0002_auto_20201024_1351'),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='OrganizationContributions',
+            name='OrganizationContribution',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('fund_desc', models.TextField(max_length=500)),
                 ('fund_required', models.DecimalField(decimal_places=2, default=0, max_digits=8)),
                 ('fund_raised', models.DecimalField(decimal_places=2, default=0, max_digits=8)),
-                ('org', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='crowdfunds.Organization')),
+                ('org', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='simplystart.Organization')),
             ],
         ),
         migrations.CreateModel(
-            name='UserContributions',
+            name='UserContribution',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('amount_contributed', models.DecimalField(decimal_places=2, default=0, max_digits=8)),
                 ('comment', models.TextField(max_length=500)),
-                ('org_event', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='crowdfunds.OrganizationContributions')),
+                ('org_event', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='simplystart.OrganizationContribution')),
                 ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
             ],
         ),

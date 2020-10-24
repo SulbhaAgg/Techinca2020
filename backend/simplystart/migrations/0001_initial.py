@@ -22,18 +22,18 @@ class Migration(migrations.Migration):
             ],
         ),
         migrations.CreateModel(
-            name='Tags',
+            name='Tag',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('tag', models.CharField(max_length=100)),
             ],
         ),
         migrations.CreateModel(
-            name='OrganizationTags',
+            name='OrganizationTag',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('org', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='crowdfunds.Organization')),
-                ('tag', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='crowdfunds.Tags')),
+                ('org', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='simplystart.Organization')),
+                ('tag', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='simplystart.Tag')),
             ],
         ),
     ]
