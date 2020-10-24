@@ -38,7 +38,7 @@
 }
 
 .hide{
-  display: none;
+  opacity: 0;
 }
 
 .half{
@@ -49,5 +49,5 @@
 }
 
 .show{
-  display:block;
+  opacity: 1;
 }

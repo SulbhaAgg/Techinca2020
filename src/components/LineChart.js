@@ -5,9 +5,9 @@ import Style from './ChartStyle'
 
 function LineChart() {
     const [toShow, setShow] = useState({
-        grossRev: true,
-        grossExp: true,
-        netProfit: true
+        grossRev: 'show',
+        grossExp: 'show',
+        netProfit: 'show'
     })
 
     const [data, setData] = useState({
@@ -51,18 +51,29 @@ function LineChart() {
         const target = event.target;
         const value = target.type === 'checkbox' ? target.checked : target.value;
         const name = target.name;
-        setShow({
-            ...toShow,
-            [name]: value
-        })
+
+        if (value === true) {
+            setShow({
+                ...toShow,
+                [name]: 'show'
+            })
+        }
+
+        else {
+            setShow({
+                ...toShow,
+                [name]: 'hide'
+            })
+        }
+
     }
 
 
     return (
         <div className='half'>
-            
+
             <V.VictoryChart theme={Style} domainPadding={20} padding={{ left: 90, top: 50, right: 10, bottom: 50 }}>
-            <V.VictoryLegend x={100}
+                <V.VictoryLegend x={100}
                     title="Legend"
                     centerTitle
                     orientation="horizontal"
@@ -74,14 +85,14 @@ function LineChart() {
                     ]}
                 />
                 <V.VictoryGroup data={data.grossRev} color="lightGreen">
-                <V.VictoryLine ></V.VictoryLine>
+                    <V.VictoryLine ></V.VictoryLine>
                 </V.VictoryGroup>
+
                 
-                {toShow.grossRev && <div className='hide'>
-                    <V.VictoryGroup color="tomato" data={data.grossExp}>
-                    <V.VictoryLine></V.VictoryLine>
-                    </V.VictoryGroup> </div>}
-                
+                    <V.VictoryGroup className={toShow.grossRev} color="tomato" data={data.grossExp}>
+                        <V.VictoryLine></V.VictoryLine>
+                    </V.VictoryGroup>
+
             </V.VictoryChart>
 
             <label>Show Revenue
