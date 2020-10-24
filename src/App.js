@@ -1,11 +1,14 @@
 import logo from './logo.svg';
-import './App.css';
+import './assets/scss/style.css'
+import './App.css'
 import LineChart from './components/LineChart';
 import LandingPage from './components/LandingPage';
 import AllBusiness from './components/AllBusiness';
 import Header from './components/Header';
 import { BrowserRouter, Link, Router, Switch, Route } from 'react-router-dom'
 import ChartPage from './components/ChartPage'
+
+
 
 function App() {
 
@@ -47,8 +50,8 @@ function App() {
 
     {
       name: 'business2',
-      fundingGoal: 100,
-      fundingGot: 50,
+      fundingGoal: 90,
+      fundingGot: 10,
       img: 'https://picsum.photos/200',
       grossRev: [
         {

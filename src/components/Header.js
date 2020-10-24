@@ -4,9 +4,9 @@ import '../App.css'
 
 export default function () {
     return(
-        <header className='App-header'>
-            <Link to="/">Home</Link>
-            <Link to="/Companies">Companies</Link>
+        <header className='header'>
+            <Link className="navItem" to="/">Home</Link>
+            <Link className="navItem" to="/Companies">Companies</Link>
         </header>
     )
 }

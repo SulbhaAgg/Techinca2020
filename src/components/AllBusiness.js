@@ -11,7 +11,7 @@ export default function AllBusiness (props){
 
 
     return (
-        <div>
+        <div className="group">
           {props.data.map((item) => (
             <Business img={item.img} name={item.name} fundingGoal={item.fundingGoal} fundingGot={item.fundingGot}></Business>
           ))}

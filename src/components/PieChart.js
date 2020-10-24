@@ -14,11 +14,11 @@ export default function PieChart(props) {
     ]
 
     return (
-        <div className='half' >
+        <span className='half' >
 
 
-        <V.VictoryPie data={data} />
+        <V.VictoryPie data={data}  />
 
-        </div>
+        </span>
     )
 }
