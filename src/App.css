@@ -12,6 +12,26 @@ body{
   background-color: #40444e;
 }
 
+.header-color{
+  background-color: #f4f5f9;
+}
+
+.banner-color-1{
+  background-color: #393B44;
+}
+
+.banner-color-2{
+  background-color: #8D93AB;
+}
+
+.banner-color-3{
+  background-color: #D6E0F0;
+}
+
+.text-color-light{
+  color: #F1F3F8;
+}
+
 .header{
   display: flex;
   background-color: #f4f5f9;

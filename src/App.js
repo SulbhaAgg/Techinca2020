@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './assets/scss/style.css'
 import './App.css'
 import LineChart from './components/LineChart';
@@ -37,14 +36,13 @@ function App() {
   return (
 
     <BrowserRouter>
-      <Header />
-
+      <div className="sticky-top"><Header/></div>
 
       <Switch>
-        <Route path="/Companies/:id">
+        <Route path="/organizations/:id">
           <ChartPage data={data}></ChartPage>
         </Route>
-        <Route path="/Companies">
+        <Route path="/organizations">
           <AllBusiness data={data}></AllBusiness>
         </Route>
         <Route exact path='/'>
