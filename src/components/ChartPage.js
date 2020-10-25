@@ -1,5 +1,5 @@
 import LineChart from './LineChart'
-import { useParams, NavLink, Route, useRouteMatch, useHistory } from 'react-router-dom'
+import { useParams, NavLink, Route, useRouteMatch, useHistory, Link } from 'react-router-dom'
 import { Row, Col, Button, Container } from 'reactstrap'
 import { Pie } from 'react-chartjs-2'
 
@@ -64,13 +64,15 @@ function ChartPage(props) {
         <Container>
             <Row className="d-flex py-4 flex-row mx-auto align-items-center justify-content-center">
                 <Col className="mx-auto text-center">
-                    <Button>Contribute</Button>
+                    <Link to={`${url}/contribute`}>
+                        <Button className="link">Contribute</Button>
+                    </Link>
                 </Col>
                 <Col>
                     <h1 className="text-light display-6 text-center">{curBiz.name}</h1>
                 </Col >
                 <Col className="mx-auto text-center">
-                    <Button>Progress</Button>
+                    <Button className="w-100">Progress</Button>
                 </Col>
             </Row>
 
