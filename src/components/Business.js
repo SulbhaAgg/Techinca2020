@@ -32,7 +32,7 @@ export default function Business(props) {
                     <Link className="bizLink" to={`${url}/${props.name}`}>
                         <h2 className="h2">{props.name}</h2>
                     </Link>
-                    <img class="bizImg" src={props.img}></img>
+                    <img class="circular" src={props.img}></img>
                 </Col>
                 <Col className="text-center">
 
@@ -49,10 +49,10 @@ export default function Business(props) {
                             </span>  : ""
                         
                     }
-                    <h4>Funds raised: </h4>
-                    <h2>${props.fundingGot}</h2>
-                    <h4>Funds needed:</h4>
-                    <h2> ${props.fundingGoal}</h2>
+                    <h4>Minimum Investment:</h4>
+                    <h2>${props.investment}</h2>
+                    <h4>Total raised: </h4>
+                    <h2> ${props.fundingGot}</h2>
                 </Col>
                 <Col className="linkCont">
                     <Link to={`${url}/${props.name}`}>
