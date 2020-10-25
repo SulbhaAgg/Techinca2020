@@ -99,7 +99,9 @@ function ChartPage(props) {
                     </Col>
                     <Col className="text-center">
                         <h6 className="display-6">Support:</h6>
-                        <Button className="w-50">Contribute</Button>
+                        <Link to={`${url}/contribute`}>
+                            <Button className="link">Contribute</Button>
+                        </Link>
                         <br></br>
                         <Button className="w-50">Learn More</Button>
                     </Col>
