@@ -8,7 +8,7 @@ export default function UserPage() {
             <Container className="mt-5 mx-auto">
                 <Row className="d-flex">
                     <Col className="align-self-center" md="3">
-                        <img className="circular" src="https://ca.slack-edge.com/T01B9HM9QE4-U01D205N2GN-a9702256f61f-512"></img>
+                        <img className="circular" src="https://media-exp1.licdn.com/dms/image/C4E03AQG-bJ2v4cJ-bA/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=eR7aIYc5_ConfXZX1TZSubEPkzVkWQ0geoWXMjpOlwA"></img>
                     </Col>
                     <Col className="align-self-center">
                         <h2 className="align-self-center display-6 text-light">Rhea Manuel</h2>
