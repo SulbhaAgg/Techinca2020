@@ -1,6 +1,7 @@
 import LineChart from './LineChart'
 import { useParams, NavLink, Route, useRouteMatch, useHistory } from 'react-router-dom'
 
+
 function ChartPage(props){
 
     const { id } = useParams()
