@@ -1,26 +1,44 @@
-import {Component} from 'react';
+import {Component, useState} from 'react';
 import { 
     Container, Row, Col,
     Form, FormGroup, Label, Input, Button
  } from 'reactstrap';
+ import axios from 'axios';
+import { Redirect } from 'react-router-dom';
+ axios.defaults.xsrfCookieName = 'csrftoken'
+ axios.defaults.xsrfHeaderName = "X-CSRFTOKEN"
 
  class Login extends Component {
     constructor() {
       super();
       this.handleSubmit = this.handleSubmit.bind(this);
-    }
-  
-    handleSubmit(event) {
-      event.preventDefault();
-      const data = new FormData(event.target);
-
-      const postdata = {
-          'username': data.get('username'),
-          'password': data.get('password')
+      this.state = {
+          redirect: localStorage.getItem("token") ? true : false
       }
     }
   
+    handleSubmit(event) {
+        const data = new FormData(event.target);
+
+        const postdata = {
+            'username': data.get('username'),
+            'password': data.get('password')
+        }
+
+        axios.post("/simplystart/token/login/", postdata)
+        .then((response) => {
+            console.log(response.data);
+            localStorage.setItem("token", response.data.auth_token);
+            this.setState({redirect: true});
+        });
+        // console.log(response);
+        //console.log(response.json().get('auth_token'));
+    }
+  
     render() {
+        if(this.state.redirect){
+            return <Redirect to='/'/>;
+        }
       return (
         <Container className="App banner-color-3 my-5">
             <h2> Sign In </h2>
@@ -46,13 +64,13 @@ import {
                             <div row>
                                 <Button type="submit" className="mx-1">Submit</Button>
                                 <Button type="reset" className="mx-1">Reset</Button>
-                                <Button className="mx-1">Sign Up</Button>
                             </div>
                       </Form>                  
                   </div>
               </Col>
           </Row>
       </Container>
+
       );
     }
   }
