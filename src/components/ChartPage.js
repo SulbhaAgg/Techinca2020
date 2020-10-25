@@ -79,7 +79,7 @@ function ChartPage(props) {
                 <Row className="align-items-center">
 
                     <Col className="text-center rounded">
-                        <img className="rounded-circle shadow" src={curBiz.img}></img>
+                        <img className="rounded-circle shadow circular" src={curBiz.img}></img>
                     </Col>
                     <Col className="py-2">
                         <h2 className="display-6 text-center">About</h2>
