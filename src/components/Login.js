@@ -8,7 +8,7 @@ import { Redirect } from 'react-router-dom';
  axios.defaults.xsrfCookieName = 'csrftoken'
  axios.defaults.xsrfHeaderName = "X-CSRFTOKEN"
 
- class Login extends Component {
+class Login extends Component {
     constructor() {
       super();
       this.handleSubmit = this.handleSubmit.bind(this);
@@ -16,8 +16,9 @@ import { Redirect } from 'react-router-dom';
           redirect: localStorage.getItem("token") ? true : false
       }
     }
-  
+
     handleSubmit(event) {
+        event.preventDefault();
         const data = new FormData(event.target);
 
         const postdata = {
@@ -31,10 +32,8 @@ import { Redirect } from 'react-router-dom';
             localStorage.setItem("token", response.data.auth_token);
             this.setState({redirect: true});
         });
-        // console.log(response);
-        //console.log(response.json().get('auth_token'));
     }
-  
+
     render() {
         if(this.state.redirect){
             return <Redirect to='/'/>;
@@ -73,5 +72,5 @@ import { Redirect } from 'react-router-dom';
 
       );
     }
-  }
+}
 export default Login;
