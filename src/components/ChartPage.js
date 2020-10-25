@@ -103,7 +103,9 @@ function ChartPage(props) {
                             <Button className="link">Contribute</Button>
                         </Link>
                         <br></br>
-                        <Button className="w-50">Learn More</Button>
+                        <Link to={`/user-page`}>
+                            <Button className="link">Learn More</Button>
+                        </Link>
                     </Col>
                 </Row>
 
