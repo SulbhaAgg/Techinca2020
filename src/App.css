@@ -32,6 +32,10 @@ body{
   color: #F1F3F8;
 }
 
+.more-rounded{
+  border-radius: 25px;
+}
+
 .jumbo{
   height:50vh;
   display: flex;
@@ -39,9 +43,6 @@ body{
   justify-content: center;
 }
 
-.lineChart{
-
-}
 
 .header{
   display: flex;
@@ -63,6 +64,10 @@ body{
   padding: 2%;
   text-align: left;
   border-radius: 20px;
+}
+
+.shadow{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .heading{
