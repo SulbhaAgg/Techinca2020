@@ -1,10 +1,18 @@
+import { Component } from "react";
 import { Link } from 'react-router-dom'
 import { Nav, NavItem, NavLink, Navbar, NavbarBrand, NavbarToggler, Collapse } from 'reactstrap';
 import '../App.css';
 
-const Header = (props) => {
+class Header extends Component {
+    constructor(props){
+        super(props)
+        this.state = {
+            loggedIn: localStorage.getItem("token") ? true : false
+        }
+    }
 
-    return(
+    render(){
+        return(
         <div>
             <Navbar className='header-color' fixed-top>
                 <NavbarBrand tag={Link} to="/">
@@ -19,7 +27,8 @@ const Header = (props) => {
                     </Nav>
             </Navbar>
         </div>
-    );
+        )
+    }
 }
 
 export default Header;

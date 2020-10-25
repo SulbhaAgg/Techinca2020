@@ -5,6 +5,7 @@ import LandingPage from './components/LandingPage';
 import AllBusiness from './components/AllBusiness';
 import Header from './components/Header';
 import Login from './components/Login';
+import Logout from './components/Logout';
 import { BrowserRouter, Link, Router, Switch, Route } from 'react-router-dom'
 import ChartPage from './components/ChartPage'
 import Contribute from './components/Contribute';
@@ -26,7 +27,7 @@ function App() {
       grossRev: [1000000, 500000, 250000],
       grossExp: [9300 , 12000, 72000,],
       tags: ["Female Owned" , "Black Owned" ],
-      about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi posuere neque sed imperdiet mollis. Mauris laoreet tempus purus ut semper. Vestibulum et tortor libero. Maecenas interdum sit amet augue sed finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris vulputate tortor ac urna posuere, non sodales ex finibus. Nulla varius risus suscipit mollis egestas. Donec vel urna turpis. Proin tincidunt tortor quam, et posuere tellus ullamcorper non. '
+      about: 'Arotech Corporation is a defense and security products and services company. It manufactures and designs products for military and non-military air and ground vehicles.'
     },
     {
       name: 'LoveBug',
@@ -37,7 +38,8 @@ function App() {
       years: ['2014', '2016', '2017'],
       grossRev: [1000000, 500000, 250000],
       grossExp: [90000, 250000, 120000],
-      tags: [ "LatinX Owned", "Female Owned"]
+      tags: [ "LatinX Owned", "Female Owned"],
+      about: 'Lovebird is the common name for the genus Agapornis, a small group of parrots in the Old World parrot family Psittaculidae. Of the nine species in the genus, eight are native to the African continent, with the grey-headed lovebird being native to Madagascar.'
     },
     {
       name: 'Inspiranza',
@@ -48,7 +50,8 @@ function App() {
       years: ['2014', '2016', '2017'],
       grossRev: [1000000, 500000, 250000],
       grossExp: [90000, 250000, 120000],
-      tags: [ "Black Owned" , "Female Owned"]
+      tags: [ "Black Owned" , "Female Owned"],
+      about: 'A company dedicated to creating beautiful, unique, and inspirational sterling silver jewelry. For many years, Inspiranza Designs operated as a direct sales company, with sales representatives who sold our jewelry all over the country.'
     },
     {
       name: 'Up Effect',
@@ -59,7 +62,8 @@ function App() {
       years: ['2014', '2016', '2017'],
       grossRev: [1000000, 500000, 250000],
       grossExp: [90000, 250000, 120000],
-      tags: [ "Kids Owned" , "LatinX Owned" , "Female Owned" ]
+      tags: [ "Kids Owned" , "LatinX Owned" , "Female Owned" ],
+      about: 'UpEffect crowdfunds transformative solutions to global issues. Crowdfunding involves raising small amounts of money from a large group of people in exchange for goods and services.'
     },
     {
       name: 'Ataumbi',
@@ -70,7 +74,8 @@ function App() {
       years: ['2014', '2016', '2017'],
       grossRev: [1000000, 500000, 250000],
       grossExp: [90000, 250000, 120000],
-      tags: ["Black Owned" , "Native American"]
+      tags: ["Black Owned" , "Native American"],
+      about: 'Assuming jewelry is a form of art, there is any number of standard mass-produced pieces. Along side these easily recognized, easy to wear, staid mass marketable pieces.'
     },
     {
       name: 'sudu',
@@ -81,7 +86,8 @@ function App() {
       years: ['2014', '2016', '2017'],
       grossRev: [1000000, 500000, 250000],
       grossExp: [90000, 250000, 120000],
-      tags: [ "LGBTQ+ Owned" , "Female Owned"  ]
+      tags: [ "LGBTQ+ Owned" , "Female Owned"  ],
+      about: 'Sudu is a technology-based logistics company located at ATDC @ Georgia Tech. Our company offers an end-to-end platform that matches shippers and carriers based upon route optimization.'
     },
     {
       name: 'Lisnr',
@@ -93,7 +99,7 @@ function App() {
       grossRev: [3600, 4200, 3900, 2400, 10500, 3600, 6000, 1200 , 9300 , 12000, 72000, 128000],
       grossExp: [90000, 250000, 120000],
       tags: [ "Female Owned" ,"LGBTQ+ Owned" , "Kids Owned"],
-      about: 'Who are we? We vanish into the night!'
+      about: 'Liner companies are part of shipping conferences where, a number of companies, which operates the same line, join together to regulate competitive activity and to protect their interests.'
     },
     {
       name: 'Yellow tail',
@@ -104,7 +110,8 @@ function App() {
       years: ['2014', '2016', '2017'],
       grossRev: [1000000, 500000, 250000],
       grossExp: [90000, 250000, 120000],
-      tags: [ "Native American"  ]
+      tags: [ "Native American"  ],
+      about: 'Whereas large wine companies developed their brands over many years of expensive marketing campaigns, Yellow Tail managed to lead the market without promotional campaigns.'
     }
   ]
 
@@ -122,6 +129,9 @@ function App() {
         </Route>
         <Route path="/login">
           <Login></Login>
+        </Route>
+        <Route path="/logout">
+          <Logout></Logout>
         </Route>
         <Route path="/organizations/:id/Contribute">
           <Contribute data={data}></Contribute>
