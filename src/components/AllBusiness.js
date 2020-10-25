@@ -18,7 +18,7 @@ export default function AllBusiness(props) {
     let isKid = false ;
     let isLGBT = false ;
     let isLatin = false ;
-    // let diversity = "" ;
+    let isNative = false ;
 
     return (
         <Container>
@@ -40,10 +40,11 @@ export default function AllBusiness(props) {
                     <Button className="link" onClick = { () => { isKid = true ; setDiversity("Kids Owned") } } >Kids Owned</Button>
                     <Button className="link" onClick = { () => { isLGBT = true ;  setDiversity("LGBTQ+ Owned") } } >LGBT+ Owned</Button>
                     <Button className="link" onClick = { () => { isLatin = true ;  setDiversity("LatinX Owned") } } >LatinX Owned</Button>
+                    <Button className="link" onClick = { () => { isNative = true ;  setDiversity("Native American") } } >Native American</Button>
                     <Button className="link" onClick = { () => { setDiversity("") } } >Show All</Button>
                 </Col>
                 <Col md="10" >
-                    <h1 className="heading">Trending</h1>
+                    <h1 className="heading">Business Highlights</h1>
                     <div className="group">
                         {props.data.map((item) => (
                             // if item.tags.contains("isFemaleOwned") then display
@@ -66,7 +67,7 @@ function getBusiness(diversity, item) {
   //  );
     if (diversity === "" || (item.tags && item.tags.indexOf(diversity) > -1 )){
         return (
-            <Business tags={item.tags} img={item.img} name={item.name} fundingGoal={item.fundingGoal} fundingGot={item.fundingGot}></Business> 
+            <Business tags={item.tags} img={item.img} name={item.name} fundingGoal={item.fundingGoal} investment={item.investment} fundingGot={item.fundingGot}></Business> 
         ) ;
     }
     return <div></div>
