@@ -7,7 +7,9 @@ import Header from './components/Header';
 import Login from './components/Login';
 import { BrowserRouter, Link, Router, Switch, Route } from 'react-router-dom'
 import ChartPage from './components/ChartPage'
-
+import Contribute from './components/Contribute';
+import { useState } from 'react';
+import ThankYou from './components/ThankYou'
 
 
 function App() {
@@ -84,8 +86,14 @@ function App() {
       <div className="sticky-top"><Header/></div>
 
       <Switch>
+        <Route path="/thank-you">
+          <ThankYou></ThankYou>
+        </Route>
         <Route path="/login">
           <Login></Login>
+        </Route>
+        <Route path="/organizations/:id/Contribute">
+          <Contribute data={data}></Contribute>
         </Route>
         <Route path="/organizations/:id">
           <ChartPage data={data}></ChartPage>

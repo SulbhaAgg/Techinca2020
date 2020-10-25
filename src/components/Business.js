@@ -59,7 +59,9 @@ export default function Business(props) {
                         <Button className="link">Company Page</Button>
                     </Link>
                     <br/>
+                    <Link to={`${url}/${props.name}/contribute`}>
                     <Button className="link">Contribute</Button>
+                    </Link>
                 </Col>
                 <Col md="3">
                     <PieChart fundingGot={props.fundingGot} fundingGoal={props.fundingGoal}></PieChart>
