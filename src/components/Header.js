@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Nav, NavItem, NavLink, Navbar, NavbarBrand, NavbarToggler, Collapse } from 'reactstrap';
-import '../App.css'
-
-import {logo} from './logo'
+import '../App.css';
 
 const Header = (props) => {
 

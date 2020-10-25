@@ -4,6 +4,7 @@ import LineChart from './components/LineChart';
 import LandingPage from './components/LandingPage';
 import AllBusiness from './components/AllBusiness';
 import Header from './components/Header';
+import Login from './components/Login';
 import { BrowserRouter, Link, Router, Switch, Route } from 'react-router-dom'
 import ChartPage from './components/ChartPage'
 
@@ -41,6 +42,9 @@ function App() {
       <div className="sticky-top"><Header/></div>
 
       <Switch>
+        <Route path="/login">
+          <Login></Login>
+        </Route>
         <Route path="/organizations/:id">
           <ChartPage data={data}></ChartPage>
         </Route>
