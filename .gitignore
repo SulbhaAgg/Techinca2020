@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+#backend ignore files
+/.vscode
+db.sqlite3
+settings.py
+*.pyc

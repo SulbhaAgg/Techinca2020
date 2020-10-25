@@ -123,9 +123,6 @@ function LineChart(props) {
                     </div>
                 </Col>
             </Row>
-
-            <label>Show Revenue
-            <input name="grossRev" type="checkbox" onChange={change}></input></label>
         </div >
         // data.netProfit === 0 ? <div>loading...</div> : <div>{data.grossExp}, {data.grossRev}, {data.netProfit}</div>
     )

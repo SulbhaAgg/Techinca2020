@@ -12,6 +12,38 @@ body{
   background-color: #40444e;
 }
 
+.header-color{
+  background-color: #f4f5f9;
+}
+
+.banner-color-1{
+  background-color: #393B44;
+}
+
+.banner-color-2{
+  background-color: #8D93AB;
+}
+
+.banner-color-3{
+  background-color: #D6E0F0;
+}
+
+.text-color-light{
+  color: #F1F3F8;
+}
+
+.more-rounded{
+  border-radius: 25px;
+}
+
+.jumbo{
+  height:50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .header{
   display: flex;
   background-color: #f4f5f9;
@@ -32,6 +64,10 @@ body{
   padding: 2%;
   text-align: left;
   border-radius: 20px;
+}
+
+.shadow{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .heading{
