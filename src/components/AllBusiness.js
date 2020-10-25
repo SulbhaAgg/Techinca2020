@@ -41,7 +41,7 @@ export default function AllBusiness(props) {
                     <Button className="link" onClick = { () => { isLGBT = true ;  setDiversity("LGBTQ+ Owned") } } >LGBT+ Owned</Button>
                     <Button className="link" onClick = { () => { isLatin = true ;  setDiversity("LatinX Owned") } } >LatinX Owned</Button>
                     <Button className="link" onClick = { () => { isNative = true ;  setDiversity("Native American") } } >Native American</Button>
-                    <Button className="link" onClick = { () => { setDiversity("") } } >Show All</Button>
+                    <Button className="link spaceTop" onClick = { () => { setDiversity("") } } >Show All</Button>
                 </Col>
                 <Col md="10" >
                     <h1 className="heading">Business Highlights</h1>
