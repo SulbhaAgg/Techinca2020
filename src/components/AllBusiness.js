@@ -44,7 +44,7 @@ export default function AllBusiness(props) {
                     <Button className="link spaceTop" onClick = { () => { setDiversity("") } } >Show All</Button>
                 </Col>
                 <Col md="10" >
-                    <h1 className="heading">Business Highlights</h1>
+                    <h1 className="heading text-center"><b>Business Highlights</b></h1>
                     <div className="group">
                         {props.data.map((item) => (
                             // if item.tags.contains("isFemaleOwned") then display
