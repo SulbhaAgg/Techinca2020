@@ -19,7 +19,8 @@ function App() {
       img: 'https://picsum.photos/200',
       years: ['2014', '2016', '2017'],
       grossRev: [1000000, 500000, 250000],
-      grossExp: [90000, 250000, 120000]
+      grossExp: [90000, 250000, 120000],
+      about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi posuere neque sed imperdiet mollis. Mauris laoreet tempus purus ut semper. Vestibulum et tortor libero. Maecenas interdum sit amet augue sed finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris vulputate tortor ac urna posuere, non sodales ex finibus. Nulla varius risus suscipit mollis egestas. Donec vel urna turpis. Proin tincidunt tortor quam, et posuere tellus ullamcorper non. '
     },
 
     {
@@ -29,7 +30,8 @@ function App() {
       img: 'https://picsum.photos/200',
       years: ['2014', '2016', '2017'],
       grossRev: [1000000, 500000, 250000],
-      grossExp: [90000, 250000, 120000]
+      grossExp: [90000, 250000, 120000],
+      about: 'Who are we? We vanish into the night!'
     }
   ]
 
