@@ -11,6 +11,7 @@ import ChartPage from './components/ChartPage'
 import Contribute from './components/Contribute';
 import { useState } from 'react';
 import ThankYou from './components/ThankYou'
+import UserPage from './components/UserPage';
 
 
 function App() {
@@ -120,6 +121,9 @@ function App() {
       <div className="sticky-top"><Header/></div>
 
       <Switch>
+        <Route path="/user-page">
+          <UserPage></UserPage>
+        </Route>
         <Route path="/thank-you">
           <ThankYou></ThankYou>
         </Route>

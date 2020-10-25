@@ -22,8 +22,8 @@ class Header extends Component {
                     <Nav className="ml-auto">
                         <NavItem><NavLink tag={Link} to="/">Home</NavLink></NavItem>
                         <NavItem><NavLink tag={Link} to="/organizations">Organizations</NavLink></NavItem>
-                        <NavItem><NavLink tag={Link} to={!this.state.loggedIn ? "/login/" : "/logout/"}>{!this.state.loggedIn ? "Login" : "Logout"}</NavLink></NavItem>
-                        <NavItem><NavLink tag={Link} to="/logout/">Logout</NavLink></NavItem>
+                        <NavItem><NavLink tag={Link} to="/login/">Login</NavLink></NavItem>
+                        <NavItem><NavLink tag={Link} to="/user-page/">User Page</NavLink></NavItem>
                     </Nav>
             </Navbar>
         </div>
