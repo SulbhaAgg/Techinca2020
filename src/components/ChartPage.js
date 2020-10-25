@@ -18,27 +18,6 @@ function ChartPage(props) {
         return it.name == id
     }) || {}
 
-    const pieData = []
-
-    const data = {
-        labels: ['Goal', 'Received'],
-        datasets: [
-            {
-                label: 'Funding Stats',
-                data: [props.data.fundingGoal, props.data.fundingGot],
-                backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)',
-                    'rgba(54, 162, 235, 0.2)'
-                ],
-                borderColor: [
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)'
-                ],
-                borderWidth: 1
-            },
-        ]
-    }
-
     const curData = {
         labels: ['Goal', 'Received'],
         datasets: [
