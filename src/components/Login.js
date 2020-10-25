@@ -4,7 +4,7 @@ import {
     Form, FormGroup, Label, Input, Button
  } from 'reactstrap';
  import axios from 'axios';
-import { Redirect } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
  axios.defaults.xsrfCookieName = 'csrftoken'
  axios.defaults.xsrfHeaderName = "X-CSRFTOKEN"
 
@@ -61,7 +61,9 @@ class Login extends Component {
                                 <Input type="password" name="password" id="password" placeholder="Password *" required />
                             </FormGroup>
                             <div row>
-                                <Button type="submit" className="mx-1">Submit</Button>
+                                <Link to="/user-page">
+                                <Button>Submit</Button>
+                                </Link>
                                 <Button type="reset" className="mx-1">Reset</Button>
                             </div>
                       </Form>                  
