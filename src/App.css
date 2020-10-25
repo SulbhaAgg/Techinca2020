@@ -32,6 +32,17 @@ body{
   color: #F1F3F8;
 }
 
+.jumbo{
+  height:50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lineChart{
+
+}
+
 .header{
   display: flex;
   background-color: #f4f5f9;

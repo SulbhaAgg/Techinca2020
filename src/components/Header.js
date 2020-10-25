@@ -15,7 +15,7 @@ const Header = (props) => {
                 </NavbarBrand>
                     <Nav className="ml-auto">
                         <NavItem><NavLink tag={Link} to="/">Home</NavLink></NavItem>
-                        <NavItem><NavLink tag={Link} to="/organizations/">Organizations</NavLink></NavItem>
+                        <NavItem><NavLink tag={Link} to="/organizations">Organizations</NavLink></NavItem>
                         <NavItem><NavLink tag={Link} to="/login/">Login</NavLink></NavItem>
                     </Nav>
             </Navbar>
