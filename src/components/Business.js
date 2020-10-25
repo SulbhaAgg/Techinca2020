@@ -34,7 +34,7 @@ export default function Business(props) {
                     </Link>
                     <img class="circular" src={props.img}></img>
                 </Col>
-                <Col className="text-center">
+                <Col className="text-center pb-2">
 
                     {
                         props.tags ?
@@ -43,7 +43,7 @@ export default function Business(props) {
                                 <b>Tags:</b> 
                                 { 
                                     props.tags.map(item => {
-                                        return <b>{item + " " }</b> ;
+                                        return <p className="text-light tagItem">{item + " " }</p> ;
                                     })
                                 } 
                             </span>  : ""
