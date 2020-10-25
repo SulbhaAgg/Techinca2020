@@ -5,6 +5,7 @@ import LandingPage from './components/LandingPage';
 import AllBusiness from './components/AllBusiness';
 import Header from './components/Header';
 import Login from './components/Login';
+import Logout from './components/Logout';
 import { BrowserRouter, Link, Router, Switch, Route } from 'react-router-dom'
 import ChartPage from './components/ChartPage'
 import Contribute from './components/Contribute';
@@ -118,6 +119,9 @@ function App() {
         </Route>
         <Route path="/login">
           <Login></Login>
+        </Route>
+        <Route path="/logout">
+          <Logout></Logout>
         </Route>
         <Route path="/organizations/:id/Contribute">
           <Contribute data={data}></Contribute>
