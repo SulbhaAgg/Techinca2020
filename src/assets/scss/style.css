@@ -10661,6 +10661,12 @@ button.bg-inverse:focus {
     text-align: center !important;
 }
 
+.tag{
+    top: -35px;
+    width: 300px;
+    position: absolute;
+}
+
 @media (min-width: 576px) {
     .text-sm-left {
         text-align: left !important;
