@@ -31,8 +31,7 @@ export default function UserPage() {
                 <div className="text-center mx-auto">
 
                     <Link to="/organizations">
-
-                        <Button className="display-6 mx-3">View highlighted businesess</Button>
+                        <Button className="display-8 mx-3">View highlighted businesess</Button>
     
                     </Link>
                 </div>
@@ -45,6 +44,23 @@ export default function UserPage() {
                 <Company name="boredaux" img="https://media-exp1.licdn.com/dms/image/C560BAQED2Z2vp0GIsQ/company-logo_200_200/0?e=1611792000&v=beta&t=KHNiDCR0mYpyxfhU25SDQ4rOcFQZNiv6WTsL2ZxA6jA" min={15} need={9000}></Company>
                 <Company name="Addinsoft" img="https://media-exp1.licdn.com/dms/image/C560BAQG7P1F4xLtKPA/company-logo_200_200/0?e=1611792000&v=beta&t=OOklkzF8TUc-BCTiLrc35RsSqHxe38_Nf98DPxwWgnQ" min={80} need={90000}></Company>
             </Row>
+
+            <div className="text-center mx-auto">
+
+                <Button className="display-7 mx-3">Intered businesses</Button>
+    
+
+            </div>
+
+            <Row className="align-center justify-content-center">
+                <Company name="Sense" img="https://media-exp1.licdn.com/dms/image/C4D0BAQEyT7-gkPbVLA/company-logo_200_200/0?e=1611792000&v=beta&t=msQeYh30or8w0mgip1JZFk_jS9ykl88l99KWEV6eXUk" min={10} need={1100}></Company>
+                <Company name="Data" img="https://media-exp1.licdn.com/dms/image/C560BAQH03e0VowA5sQ/company-logo_200_200/0?e=1611792000&v=beta&t=L6n0pW72TTwnS7xl4P5TqS1lk-sTyNmI0klYgIzvVPw" min={20} need={900}></Company>
+                <Company name="Cedar" img="https://media-exp1.licdn.com/dms/image/C4E0BAQGCa7Nwu6TQ6w/company-logo_200_200/0?e=1611792000&v=beta&t=6lBOaITGQkqTpWvo-BCRUCW4-oVVszPx9Tq9jp_pISo" min={20} need={2000}></Company>
+                <Company name="Airkit" img="https://media-exp1.licdn.com/dms/image/C560BAQHzZEL_PNU69g/company-logo_200_200/0?e=1611792000&v=beta&t=X4AElK2iAAropilkb_4DUR-geDssk0OrgJlCeUDzEDg" min={50} need={5000}></Company>
+                <Company name="Motiv" img="https://media-exp1.licdn.com/dms/image/C4E0BAQEU7vNz7kIxJw/company-logo_200_200/0?e=1611792000&v=beta&t=fJqI8ulya1z2OIq9q3uKgsUXdNUpBNHblPtIpRdqCNw" min={15} need={9000}></Company>
+                <Company name="M49" img="https://media-exp1.licdn.com/dms/image/C560BAQFBLslU58JHlA/company-logo_200_200/0?e=1611792000&v=beta&t=eFfrARW1f42uVUW28XJge4_Um-fpmvM3cGdWMTZssew" min={80} need={90000}></Company>
+            </Row>
+
 
             </Container>
         </div >
