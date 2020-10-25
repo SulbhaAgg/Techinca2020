@@ -16,11 +16,12 @@ function App() {
     {
       name: 'business1',
       fundingGoal: 100,
-      fundingGot: 50,
+      fundingGot: 50, 
       img: 'https://picsum.photos/200',
       years: ['2014', '2016', '2017'],
       grossRev: [1000000, 500000, 250000],
-      grossExp: [90000, 250000, 120000]
+      grossExp: [90000, 250000, 120000],
+      tags: ["Female Owned"]
     },
 
     {
@@ -30,7 +31,48 @@ function App() {
       img: 'https://picsum.photos/200',
       years: ['2014', '2016', '2017'],
       grossRev: [1000000, 500000, 250000],
-      grossExp: [90000, 250000, 120000]
+      grossExp: [90000, 250000, 120000],
+      tags: ["LatinX Owned", "Female Owned"]
+    },
+    {
+      name: 'business3',
+      fundingGoal: 90,
+      fundingGot: 10,
+      img: 'https://picsum.photos/200',
+      years: ['2014', '2016', '2017'],
+      grossRev: [1000000, 500000, 250000],
+      grossExp: [90000, 250000, 120000],
+      tags: ["Kids Owned", "Black Owned"]
+    },
+    {
+      name: 'business4',
+      fundingGoal: 90,
+      fundingGot: 10,
+      img: 'https://picsum.photos/200',
+      years: ['2014', '2016', '2017'],
+      grossRev: [1000000, 500000, 250000],
+      grossExp: [90000, 250000, 120000],
+      tags: ["Black Owned"]
+    },
+    {
+      name: 'business5',
+      fundingGoal: 90,
+      fundingGot: 10,
+      img: 'https://picsum.photos/200',
+      years: ['2014', '2016', '2017'],
+      grossRev: [1000000, 500000, 250000],
+      grossExp: [90000, 250000, 120000],
+      tags: ["LGBTQ+ Owned"]
+    },
+    {
+      name: 'business6',
+      fundingGoal: 90,
+      fundingGot: 10,
+      img: 'https://picsum.photos/200',
+      years: ['2014', '2016', '2017'],
+      grossRev: [1000000, 500000, 250000],
+      grossExp: [90000, 250000, 120000],
+      tags: [ "Female Owned" ,"LGBTQ+ Owned"]
     }
   ]
 
