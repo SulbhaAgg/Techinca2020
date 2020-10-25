@@ -35,6 +35,20 @@ export default function Business(props) {
                     <img class="bizImg" src={props.img}></img>
                 </Col>
                 <Col className="text-center">
+
+                    {
+                        props.tags ?
+                    
+                            <span className="tag" >
+                                <b>Tags:</b> 
+                                { 
+                                    props.tags.map(item => {
+                                        return <b>{item + " " }</b> ;
+                                    })
+                                } 
+                            </span>  : ""
+                        
+                    }
                     <h4>Funds raised: </h4>
                     <h2>${props.fundingGot}</h2>
                     <h4>Funds needed:</h4>
