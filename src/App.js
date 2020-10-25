@@ -23,7 +23,7 @@ function App() {
       img: 'https://cdn.spaandclinic.com.au/wp-content/uploads/2020/04/29173903/iStock-1152658699.jpg',
       years: ['2014', '2016', '2017'],
       grossRev: [1000000, 500000, 250000],
-      grossExp: [90000, 250000, 120000],
+      grossExp: [9300 , 12000, 72000,],
       tags: ["Female Owned" , "Black Owned" ],
       about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi posuere neque sed imperdiet mollis. Mauris laoreet tempus purus ut semper. Vestibulum et tortor libero. Maecenas interdum sit amet augue sed finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris vulputate tortor ac urna posuere, non sodales ex finibus. Nulla varius risus suscipit mollis egestas. Donec vel urna turpis. Proin tincidunt tortor quam, et posuere tellus ullamcorper non. '
     },
@@ -88,8 +88,8 @@ function App() {
       fundingGot: 8974,
       investment: 30,
       img: 'https://www.first5napa.org/wp-content/uploads/2020/06/Gender-Neutral-Kid-smaller-750x510.jpg',
-      years: ['2014', '2016', '2017'],
-      grossRev: [1000000, 500000, 250000],
+      years: [ '2008','2009','2010','2011','2012','2013','2014', '2015' , '2016', '2017','2018','2019'],
+      grossRev: [3600, 4200, 3900, 2400, 10500, 3600, 6000, 1200 , 9300 , 12000, 72000, 128000],
       grossExp: [90000, 250000, 120000],
       tags: [ "Female Owned" ,"LGBTQ+ Owned" , "Kids Owned"],
       about: 'Who are we? We vanish into the night!'
