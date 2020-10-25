@@ -47,7 +47,7 @@ export default function UserPage() {
 
             <div className="text-center mx-auto">
 
-                <span className="display-7 mx-3 text-light">Intered businesses</span>
+                <span className="display-7 mx-3 text-light">Liked businesses</span>
     
 
             </div>
